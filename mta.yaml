@@ -1,0 +1,12 @@
+_schema-version: "3.1"
+ID: cicd-cert-test
+version: 1.0.0
+modules:
+  - name: cicd-cert-test
+    type: nodejs
+    path: .
+    parameters:
+      memory: 128M
+      disk-quota: 256M
+    build-parameters:
+      ignore: [".git/", "mta_archives/"]
